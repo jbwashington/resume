@@ -1,0 +1,63 @@
+James Washington
+Email: jbwashington@gmail.com
+Tel: 501-240-6690
+
+================================================================================
+
+
+
+SKILLS -------------------------------------------------------------------------
+
+- Data Analysis: Python Pandas D3 Visualization Library Excel Macros, Pivot Tables, VB Scripting mySQL, MS Access 
+- Frontend Development: React Gulpjs HTML/CSS 
+- Backend Development: Python PostgreSQL Bash Shell Scripting *nix Command Line Interface 
+
+
+EMPLOYMENT ---------------------------------------------------------------------
+
+Business Analyst, CBS Corporation (2017-04 — 2018-06)
+Responsible for assisting a team of project managers within the ETS team with project delivery and reporting, as well as auditing all ETS projects within the portfolio and providing metrics to senior leadership.  
+- Assisted with the delivery of highly visible projects that are paramount to both improving and keeping CBS Corporate Services running for customers.
+- Facilitated and negotiated enterprise software application requirements amongst multiple stakeholders.
+- Identified and documented current and future cloud-based business processes.
+- Weekly and monthly reporting and analysis of critical incidents, IT support outages, emergency changes, operating metrics, and service improvement plans.
+- Assisted with demand planning by contributing to business cases and capital project requests.
+- Created project related materials, such as training/process guides and knowledge articles.
+- Managed incident management notification process tools, such as ServiceNow and SendWordNow
+- Assisted with Disaster Recovery and Business Continuity planning and execution, solution health assessments, and reporting.
+- Worked alongside development team to conduct User Acceptance Tests for feature validation and enhancements prior to deploying enterprise software solutions into production.
+
+Tech Coordinator, University of Arkansas (2013-09 — 2016-06)
+Worked as a liaison between students looking for volunteer opportunities, and nonprofit organizations looking for volunteers.
+- Drafted a standardized workstation setup checklist to help configure systems for departmental use.
+- Drafted buy sheets for purchasing department workstations and networks.
+- Developed and implemented a full-stack web application to process online orders for the Full Circle Food Pantry.
+
+Front-End Developer, Hue Solutions (2008-02 — 2016-08)
+Web and mobile designer, developer, and server administrator.
+- Convert mockups and wireframes into dynamic web applications according to client requirements.
+- Deployed, configured, maintained, and troubleshoot cloud servers across Google Cloud, Microsoft Azure, and Amazon Web Services.
+
+
+
+
+EDUCATION ----------------------------------------------------------------------
+
+University of Arkansas (2013-09 — Present)
+
+
+
+
+
+
+
+
+
+
+INTERESTS ----------------------------------------------------------------------
+
+ENTERPRISE CLOUD ARCHITECTURE
+
+CYBERSECURITY
+
+

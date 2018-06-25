@@ -1,0 +1,145 @@
+{
+  "basics": {
+    "name": "James Washington",
+    "label": "Business Analyst",
+    "picture": "",
+    "email": "jbwashington@gmail.com",
+    "phone": "501-240-6690",
+    "website": "",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "jbwashington",
+        "url": "https://github.com/jbwashington"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jbwashington",
+        "url": "https://www.linkedin.com/in/jbwashington/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "CBS Corporation",
+      "position": "Business Analyst",
+      "website": "https://www.cbscorporation.com",
+      "startDate": "2017-04-17",
+      "endDate": "2018-06-20",
+      "summary": "Responsible for assisting a team of project managers within the ETS team with project delivery and reporting, as well as auditing all ETS projects within the portfolio and providing metrics to senior leadership.  ",
+      "highlights": [
+        "Assisted with the delivery of highly visible projects that are paramount to both improving and keeping CBS Corporate Services running for customers.",
+        "Facilitated and negotiated enterprise software application requirements amongst multiple stakeholders.",
+        "Identified and documented current and future cloud-based business processes.",
+        "Weekly and monthly reporting and analysis of critical incidents, IT support outages, emergency changes, operating metrics, and service improvement plans.",
+        "Assisted with demand planning by contributing to business cases and capital project requests.",
+        "Created project related materials, such as training/process guides and knowledge articles.",
+        "Managed incident management notification process tools, such as ServiceNow and SendWordNow",
+        "Assisted with Disaster Recovery and Business Continuity planning and execution, solution health assessments, and reporting.",
+        "Worked alongside development team to conduct User Acceptance Tests for feature validation and enhancements prior to deploying enterprise software solutions into production."
+      ]
+    },
+    {
+      "company": "University of Arkansas",
+      "position": "Tech Coordinator",
+      "website": "http://service.uark.edu",
+      "startDate": "2013-09-18",
+      "endDate": "2016-06-01",
+      "summary": "Worked as a liaison between students looking for volunteer opportunities, and nonprofit organizations looking for volunteers.",
+      "highlights": [
+        "Drafted a standardized workstation setup checklist to help configure systems for departmental use.",
+        "Drafted buy sheets for purchasing department workstations and networks.",
+        "Developed and implemented a full-stack web application to process online orders for the Full Circle Food Pantry."
+      ]
+    },
+    {
+      "company": "Hue Solutions",
+      "position": "Front-End Developer",
+      "website": "http://gpatech.org",
+      "startDate": "2008-02-21",
+      "endDate": "2016-08-15",
+      "summary": "Web and mobile designer, developer, and server administrator.",
+      "highlights": [
+        "Convert mockups and wireframes into dynamic web applications according to client requirements.",
+        "Deployed, configured, maintained, and troubleshoot cloud servers across Google Cloud, Microsoft Azure, and Amazon Web Services."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Arkansas",
+      "area": "Sociology",
+      "studyType": "Bachelor (In Progress)",
+      "startDate": "2013-09-08",
+      "endDate": "",
+      "gpa": "",
+      "courses": [
+        "CSCE2004 - Programming Foundations I",
+        "SOCI4010 - Conducting Research in a Multicultural Community"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Data Analysis",
+      "level": "",
+      "keywords": [
+        "Python Pandas",
+        "D3 Visualization Library",
+        "Excel Macros, Pivot Tables, VB Scripting",
+        "mySQL, MS Access"
+      ]
+    },
+    {
+      "name": "Frontend Development",
+      "level": "",
+      "keywords": [
+        "React",
+        "Gulpjs",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "",
+      "keywords": [
+        "Python",
+        "PostgreSQL",
+        "Bash Shell Scripting",
+        "*nix Command Line Interface"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Enterprise Cloud Architecture",
+      "keywords": []
+    },
+    {
+      "name": "Cybersecurity",
+      "keywords": []
+    }
+  ],
+  "references": []
+}

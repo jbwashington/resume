@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>James Washington</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            main {
+              display: block;
+            }
+            
+            body {
+              font-size: 15px;
+              color: #333;
+              line-height: 1.42857143;
+              background-color: #F0F0F0;
+              margin: 0;
+              padding: 0;
+              font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+            }
+            
+            /* Typical page borders are awkward when rendered to PDF. */
+            body.pdf {
+              background-color: #FFFFFF;
+            }
+            
+            /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
+            the PDF case, <main> for the HTML case, and style both via an ID. */
+            #main {
+              background-color: #FFF;
+              margin: 10px;
+              padding: 10px;
+              border: 1px solid #E6E6E6;
+            }
+            
+            body.pdf > #main {
+              border: none;
+            }
+            
+            #container > header {
+              padding-top: 6em;
+              padding-bottom: 1em;
+            }
+            
+            body.pdf #container > header {
+              padding: 0;
+            }
+            
+            #main > #container > section {
+              margin-left: 150px;
+              position: relative;
+              display: block;
+            }
+            
+            section > div {
+              margin-bottom: 60px;
+            }
+            
+            span.fa
+            {
+              font-size: 56px;
+              position: absolute;
+              top: 37px;
+              transform: translateY(-50%);
+              left: -100px;
+              color: #1a4367;
+            }
+            
+            hr {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              border: 0;
+              border-top: 1px solid #EEE;
+            }
+            
+            .tenure, .keywords {
+              font-size: 75%;
+            }
+            
+            h1 {
+              margin: 0;
+              font-size: 46px;
+              display: inline-block;
+            }
+            
+            h2 {
+              font-size: 30px;
+              color: #4376a2;
+              text-transform: uppercase;
+              font-weight: normal;
+              padding-top: 20px;
+              margin-bottom: 60px;
+            }
+            
+            h3 {
+              margin-bottom: 0;
+              font-size: 18px;
+            }
+            
+            a, a:visited {
+              color: #428BCA;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            
+            a:hover {
+              text-decoration: underline;
+            }
+            
+            .defunct {
+              color: #989898;
+              font-weight: bold;
+            }
+            
+            #summary {
+              font-size: 150%;
+              margin-left: 0;
+              padding: 20px 0;
+            }
+            
+            #summary > p > strong {
+              font-size: 1.25em;
+            }
+            
+            #contact {
+              float: right;
+            }
+            
+            #summary > header > .fa-info {
+              font-size: 70px;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              font-weight: normal;
+              top: 50%;
+              left: -85px;
+              transform: translateY(-50%);
+            }
+            
+            #summary h2 {
+              display: none;
+            }
+            
+            
+            .label-keyword {
+              display: inline-block;
+              background: #e8f4ff;
+              color: black;
+              font-size: 0.9em;
+              padding: 5px;
+              border: 1px solid #357ebd;
+              border-radius: 5px;
+              margin-top: 2px;
+              font-weight: bold;
+              text-align: center;
+            }
+            
+            .notes {
+              font-size: 10px;
+              display: block;
+              font-weight: normal;
+              text-transform: uppercase;
+            }
+            
+            .card-skills {
+                position: relative;
+            }
+            .card-nested {
+                min-height: 0;
+                margin-bottom: 10px;
+                border-width: 1px 0 0 0;
+            }
+            .card {
+                background: #FFF;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            
+            .skill-level {
+              border-radius: 3px;
+              position: absolute;
+              top: 10px;
+              bottom: 10px;
+              left: 0;
+              width: 10px;
+              box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+            }
+            .skill-level .skill-progress {
+              position: absolute;
+              border-radius: 3px;
+              bottom: 0;
+              width: 100%;
+              -webkit-transition: height 1s ease;
+            }
+            .skill-level .skill-progress.beginner {
+              height: 50%;
+              background: #e74c3c;
+            }
+            .skill-level .skill-progress.intermediate {
+              height: 70%;
+              background: #f1c40f;
+            }
+            .skill-level .skill-progress.advanced {
+              height: 80%;
+              background: #428bca;
+            }
+            .skill-level .skill-progress.master {
+              height: 95%;
+              background: #5cb85c;
+            }
+            .skill-info {
+              margin-left: 10px;
+            }
+            @media (max-width: 480px) {
+              .skill-info {
+                margin-left: 20px;
+              }
+            }
+            .skill-info > strong {
+              font-weight: 400;
+              font-size: 24px;
+              color: #1d1d1d;
+              line-height: 24px;
+            }
+            
+            .list-unstyled {
+              padding-left: 0;
+              list-style: none;
+            }
+            
+            .card-skills {
+              position: relative;
+            }
+            
+            .space-top {
+                margin-top: 5px;
+            }
+            
+            #container {
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            #elevator-pitch {
+              text-align: center;
+              font-size: 24px;
+              color: #BFC1C3;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+            
+            .res-label {
+              font-style: italic;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <main id="main">
+            <div id="container">
+                <header>
+                     <h1>James Washington</h1>
+                    <div id="contact">
+                        <div class="email"><a href="mailto:jbwashington@gmail.com">jbwashington@gmail.com</a>
+                        </div>
+                        <div class="phone">501-240-6690</div>
+                    </div>
+                </header>
+                <hr>
+                <section id="skills">
+                    <header>
+                         <h2>Skills</h2>
+                    </header> <span class="fa fa-lg fa-code"></span>
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
+                                <div class="skill-progress "></div>
+                            </div>
+                            <div class="skill-info"> <strong>Data Analysis</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Python Pandas</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">D3 Visualization Library</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Excel Macros, Pivot Tables, VB Scripting</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">mySQL, MS Access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
+                                <div class="skill-progress "></div>
+                            </div>
+                            <div class="skill-info"> <strong>Frontend Development</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">React</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Gulpjs</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">HTML/CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="" data-placement="left">
+                                <div class="skill-progress "></div>
+                            </div>
+                            <div class="skill-info"> <strong>Backend Development</strong>
+                                <div class="space-top labels">
+                                    <div class="label label-keyword"> <span class="kw">Python</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">PostgreSQL</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">Bash Shell Scripting</span>
+                                    </div>
+                                    <div class="label label-keyword"> <span class="kw">*nix Command Line Interface</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section id="employment">
+                    <header> <span class="fa fa-lg fa-building"></span> 
+                         <h2>employment</h2>
+
+                    </header>
+                    <div>
+                         <h3><em>Business Analyst</em>,
+
+    <a href="https://www.cbscorporation.com">CBS Corporation</a>
+
+    </h3> <span class="tenure">2017-04 — 2018-06</span>
+                        <p>
+                            <p>Responsible for assisting a team of project managers within the ETS team
+                                with project delivery and reporting, as well as auditing all ETS projects
+                                within the portfolio and providing metrics to senior leadership.</p>
+                        </p>
+                        <ul>
+                            <li>Assisted with the delivery of highly visible projects that are paramount
+                                to both improving and keeping CBS Corporate Services running for customers.</li>
+                            <li>Facilitated and negotiated enterprise software application requirements
+                                amongst multiple stakeholders.</li>
+                            <li>Identified and documented current and future cloud-based business processes.</li>
+                            <li>Weekly and monthly reporting and analysis of critical incidents, IT support
+                                outages, emergency changes, operating metrics, and service improvement
+                                plans.</li>
+                            <li>Assisted with demand planning by contributing to business cases and capital
+                                project requests.</li>
+                            <li>Created project related materials, such as training/process guides and
+                                knowledge articles.</li>
+                            <li>Managed incident management notification process tools, such as ServiceNow
+                                and SendWordNow</li>
+                            <li>Assisted with Disaster Recovery and Business Continuity planning and execution,
+                                solution health assessments, and reporting.</li>
+                            <li>Worked alongside development team to conduct User Acceptance Tests for
+                                feature validation and enhancements prior to deploying enterprise software
+                                solutions into production.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Tech Coordinator</em>,
+
+    <a href="http://service.uark.edu">University of Arkansas</a>
+
+    </h3> <span class="tenure">2013-09 — 2016-06</span>
+                        <p>
+                            <p>Worked as a liaison between students looking for volunteer opportunities,
+                                and nonprofit organizations looking for volunteers.</p>
+                        </p>
+                        <ul>
+                            <li>Drafted a standardized workstation setup checklist to help configure systems
+                                for departmental use.</li>
+                            <li>Drafted buy sheets for purchasing department workstations and networks.</li>
+                            <li>Developed and implemented a full-stack web application to process online
+                                orders for the Full Circle Food Pantry.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3><em>Front-End Developer</em>,
+
+    <a href="http://gpatech.org">Hue Solutions</a>
+
+    </h3> <span class="tenure">2008-02 — 2016-08</span>
+                        <p>
+                            <p>Web and mobile designer, developer, and server administrator.</p>
+                        </p>
+                        <ul>
+                            <li>Convert mockups and wireframes into dynamic web applications according
+                                to client requirements.</li>
+                            <li>Deployed, configured, maintained, and troubleshoot cloud servers across
+                                Google Cloud, Microsoft Azure, and Amazon Web Services.</li>
+                        </ul>
+                    </div>
+                </section>
+                <hr>
+                <section id="education">
+                    <header> <span class="fa fa-lg fa-mortar-board"></span> 
+                         <h2>education</h2>
+
+                    </header>
+                    <div>
+                        
+<h3>
+
+University of Arkansas
+
+</h3>
+<span class="tenure">2013-09 — Present</span>| <span class="keywords">CSCE2004 - Programming Foundations I SOCI4010 - Conducting Research in a Multicultural Community </span>
+                    </div>
+                </section>
+                <hr>
+                <section id="interests">
+                    <header> <span class="fa fa-lg fa-bicycle"></span> 
+                         <h2>interests</h2>
+
+                    </header>
+                    <div>
+                         <h3><em>Enterprise Cloud Architecture</em></h3>
+ <span class="tenure">Current</span>
+
+                    </div>
+                    <div>
+                         <h3><em>Cybersecurity</em></h3>
+ <span class="tenure">Current</span>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
