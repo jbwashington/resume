@@ -9,7 +9,7 @@ contact:
   website: ""
 meta:
   format: FRESH@^1.0.0-beta
-  modified: '2018-06-25T23:10:54.681Z'
+  modified: '2018-06-25T23:45:18.751Z'
 location:
   city: 'New York'
   region: 'New York'
@@ -65,8 +65,8 @@ education:
     -
       institution: 'University of Arkansas'
       start: '2013-09-08'
-      end: ""
-      grade: ""
+      end: '2018-06-18'
+      grade: '3.1'
       curriculum:
         - 'CSCE2004 - Programming Foundations I'
         - 'SOCI4010 - Conducting Research in a Multicultural Community'

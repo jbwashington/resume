@@ -69,13 +69,13 @@
   "education": [
     {
       "institution": "University of Arkansas",
-      "gpa": "",
+      "gpa": "3.1",
       "courses": [
         "CSCE2004 - Programming Foundations I",
         "SOCI4010 - Conducting Research in a Multicultural Community"
       ],
       "startDate": "2013-09-08",
-      "endDate": "",
+      "endDate": "2018-06-18",
       "area": "Sociology",
       "studyType": "Bachelor (In Progress)"
     }

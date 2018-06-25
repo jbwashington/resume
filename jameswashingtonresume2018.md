@@ -45,7 +45,7 @@ Web and mobile designer, developer, and server administrator.
 
 ## EDUCATION
 
-### University of Arkansas (2013-09 — Present)
+### University of Arkansas (2013-09 — 2018-06)
 
 
 
